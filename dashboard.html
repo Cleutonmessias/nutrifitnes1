@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriFitnes - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bem-vindo, <span id="userWelcome"></span>!</h2>
+        <button onclick="logout()">Sair</button>
+        <h3>Meus Treinos</h3>
+        <form id="workoutForm">
+            <input type="text" id="workoutName" placeholder="Nome do Treino" required>
+            <textarea id="workoutDetails" placeholder="Detalhes do Treino" required></textarea>
+            <button type="submit">Adicionar Treino</button>
+        </form>
+        <ul id="workoutList"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
